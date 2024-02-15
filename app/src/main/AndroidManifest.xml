@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AndropeINN"
+        tools:targetApi="31">
+        <activity
+            android:name=".las_estrellas"
+            android:exported="false"
+            android:label="El salon de las estrellas fugaces"
+            />
+        <activity
+            android:name=".la_taberna"
+            android:exported="true"
+            android:label="La taberna del viejo faro"
+            >
+
+
+
+        </activity>
+        <activity
+            android:name=".reserva"
+            android:exported="false" />
+        <activity
+            android:name=".espejo_encantado"
+            android:exported="false"
+            android:label="La Casa del Espejo Encantado" />
+
+        <activity
+            android:name=".el_jardin"
+            android:exported="true"
+            android:label="El Jardin de Las Mariposas" />
+        <activity
+            android:name=".Login"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".Locales"
+            android:exported="true" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

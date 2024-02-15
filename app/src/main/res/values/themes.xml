@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.AndropeINN" parent="Theme.Material3.DayNight">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/plateado</item>
+    </style>
+
+    <style name="Theme.AndropeINN" parent="Base.Theme.AndropeINN" />
+
+    <style name="Theme.AndropeINN.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.AndropeINN.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.AndropeINN.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

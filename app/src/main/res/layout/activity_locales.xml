@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/andrope"
+    android:orientation="vertical"
+    tools:context=".Locales">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Locales"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+
+        />
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal"
+        >
+
+        <androidx.cardview.widget.CardView
+
+            android:layout_width="190dp"
+            android:layout_height="270dp"
+            android:layout_marginLeft="10dp"
+
+
+            app:cardCornerRadius="25dp">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:orientation="vertical"
+
+
+                >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:text="El jardin de las mariposas"
+
+                    />
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:layout_width="95dp"
+                    android:layout_height="79dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/jardin1"
+                    app:riv_corner_radius="20dp" />
+
+
+                <TextView
+                    android:layout_width="163dp"
+                    android:layout_height="84dp"
+                    android:layout_gravity="center"
+                    android:text="@string/local1"
+
+                    android:textAlignment="center"
+                    android:textSize="10sp" />
+
+                <Button
+
+                    android:id="@+id/btnJardin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="33dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="@color/azulMarino"
+                    android:drawableRight="@drawable/arrow_right"
+                    android:drawablePadding="10dp"
+                    android:text="Ver"
+                    android:textSize="10sp" />
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/local2"
+            android:layout_width="190dp"
+            android:layout_height="270dp"
+            android:layout_marginLeft="10dp"
+            app:cardCornerRadius="25dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="La casa del espejo encantado"
+
+                    />
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:layout_width="95dp"
+                    android:layout_height="79dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/espejo_encantado1"
+                    app:riv_corner_radius="20dp" />
+
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/local2"
+                    android:textAlignment="center"
+                    android:textSize="10sp" />
+
+
+                <Button
+
+                    android:id="@+id/btnEspejo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="33dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/azulMarino"
+                    android:drawableRight="@drawable/arrow_right"
+                    android:drawablePadding="10dp"
+                    android:text="Ver"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/local3"
+            android:layout_width="190dp"
+            android:layout_height="270dp"
+
+            android:layout_marginLeft="10dp"
+            app:cardCornerRadius="25dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:orientation="vertical"
+                android:textAlignment="center">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:text="El Salon de las estrellas fugaces"
+
+                    android:textAlignment="center" />
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:layout_width="95dp"
+                    android:layout_height="79dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/estrellas3"
+                    app:riv_corner_radius="20dp" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/local3"
+                    android:textAlignment="center" />
+
+
+                <Button
+
+                    android:id="@+id/btnEstrellas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="33dp"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/azulMarino"
+                    android:drawableRight="@drawable/arrow_right"
+                    android:drawablePadding="10dp"
+                    android:text="Ver"
+                    android:textSize="10sp" />
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/local4"
+            android:layout_width="190dp"
+            android:layout_height="270dp"
+            android:layout_marginLeft="10dp"
+            app:cardCornerRadius="25dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="La Taberna del viejo faro"
+
+                    />
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:layout_width="95dp"
+                    android:layout_height="79dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/taberna1"
+                    app:riv_corner_radius="20dp" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/local4"
+                    android:textAlignment="center" />
+
+
+                <Button
+                    android:id="@+id/btnVerTaberna"
+                    android:layout_width="wrap_content"
+                    android:layout_height="33dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:backgroundTint="@color/azulMarino"
+                    android:drawableRight="@drawable/arrow_right"
+                    android:drawablePadding="10dp"
+                    android:text="Ver"
+                    android:textSize="10sp" />
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+</LinearLayout>

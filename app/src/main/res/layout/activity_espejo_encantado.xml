@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".espejo_encantado">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="MissingClass">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Galeria de imagenes"
+
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="242dp"
+
+            />
+
+
+        <TextView
+            android:layout_width="390dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/text_bg"
+
+            android:padding="10dp"
+            android:text="@string/espejo_desc"
+            android:textAlignment="center"
+            android:textColor="@color/black" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Características"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            />
+
+        <TextView
+
+            android:layout_width="390dp"
+            android:layout_height="146dp"
+            android:background="@drawable/text_bg"
+
+            android:editable="false"
+            android:ems="10"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:text="@string/espejo_encantado_caracteristicas"
+            android:textColor="@color/black"
+            tools:ignore="Deprecated" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ubicación"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/location"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+
+                    android:padding="10dp"
+                    android:layout_height="100dp"
+                    android:text="Casa del Espejo Encantado, Km.152 carretera hacia La Union,San Miguel, El Salvador " />
+
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnReservar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:backgroundTint="@color/azulClaro"
+                android:text="¿Listo para reservar?"
+                android:textColor="@color/black" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

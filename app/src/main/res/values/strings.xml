@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Andrope INN</string>
+    <string name="local1">Este local para eventos sociales está diseñado con una temática de naturaleza exuberante y encanto primaveral. Ideal para bodas al aire libre, banquetes de primavera o fiestas temáticas con un toque de fantasía natural.</string>
+    <string name="local2"> Este lugar mágico ofrece un ambiente único y enigmático para todo tipo de eventos sociales. Con su arquitectura fascinante y la decoración de espejos adornados con intrincados diseños, este local brinda una experiencia única donde los invitados se sentirán transportados a un mundo de misterio y elegancia.</string>
+    <string name="local3">Ubicado en lo alto de un edificio con vistas panorámicas de la ciudad, este espacio para eventos sociales ofrece una experiencia celestial.</string>
+    <string name="local4">Inspirado en la nostalgia de los antiguos puertos marítimos, este local para eventos sociales recrea el ambiente acogedor y rústico de una taberna junto al mar.</string>
+    <string name="elJardinDescripcion">"El Jardín de las Mariposas" es un local que evoca la delicadeza y la belleza de la naturaleza a través de su diseño y ambiente. Este lugar está diseñado para ser una experiencia multisensorial que transporta a sus visitantes a un mundo de serenidad y encanto.</string>
+    <string name="title_activity_faro">faro</string>
+
+    <string name="espejo_desc">La Casa del Espejo Encantado es un lugar mágico y encantador que transporta a sus visitantes a un mundo de fantasía y elegancia. Ubicado en un entorno idílico, este local de eventos sociales se destaca por su arquitectura impresionante y su diseño interior exquisito.</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="espejo_encantado_caracteristicas">-Capacidad para 100 personas\n-Ambiente familiar\n-Espacios flexibles\n Espacios naturales con senderos, fuentes y áreas de descanso\n-Adaptabilidad para diferentes tipos de eventos</string>
+    <string name="el_jardin_caracteristicas">-Capacidad para 100 personas\n-Ambiente familiar\n-Espacios flexibles</string>
+    <string name="tabernaCaracteristicas">
+        -Capacidad para 150 personas\n-Vistas panorámicas\n-Cocina gourmet\nBarra de cocteles\n-Area de entretenimiento
+    </string>
+    <string name="tabernaDesc">
+        Sumérgete en el encanto de épocas pasadas en La Taberna del Viejo Faro, un santuario de celebraciones donde la historia se entrelaza con la elegancia contemporánea. Con su atmósfera envolvente, inspirada en los antiguos faros que guiaban a los marineros a tierras seguras, este exclusivo local de eventos sociales ofrece un refugio para aquellos que buscan experiencias memorables.
+    </string>
+
+
+    <string name="tabernaUbicacion">La taberna del viejo faro, El Esteron, Intipucá</string>
+
+    <string name="lasEstrellasDesc">En lo más alto de la ciudad, donde el bullicio se desvanece y los sueños toman vuelo, se alza majestuoso El Salón de las Estrellas Fugaces. Este oasis celestial, suspendido entre el cielo y la tierra, es más que un simple local de eventos sociales; es un portal hacia la magia y la elegancia sin límites.</string>
+    <string name="lasEstrellasUbi">400 Metros al Poniente de Playa El Cuco, Calle a Conchaguita, Chirilagua</string>
+    <string name="lasEstrellasCaracteristicas">
+
+        - Capacidad para 75 personas\n
+        - Ubicación priviligida\n
+        - Ambiente celestial\n
+        - Servicio exclusivo\n
+        - Espacios al aire libre\n
+        - Decoración elegante
+
+
+    </string>
+</resources>
