@@ -1,9 +1,9 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.AndropeINN" parent="Theme.Material3.DayNight">
+    <style name="Base.Theme.AndropeINN" parent="Theme.Material3.Light">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
-        <item name="colorPrimary">@color/plateado</item>
+        <item name="colorPrimary">@color/black</item>
     </style>
 
     <style name="Theme.AndropeINN" parent="Base.Theme.AndropeINN" />
@@ -16,4 +16,24 @@
     <style name="Theme.AndropeINN.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.AndropeINN.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="RadioButtonStyle" parent="Theme.AppCompat.Light">
+        <item name="colorControlActivated">@color/black</item>
+    </style>
+
+    <style name="crearCuenta" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <!-- Color primary is used for the default action bar background -->
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <!-- Color accent is used for the color of UI controls -->
+        <item name="colorAccent">@color/black</item>
+        <item name="android:textColor">@color/white</item>
+
+
+
+    </style>
+
+
+
 </resources>

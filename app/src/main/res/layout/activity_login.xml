@@ -45,7 +45,7 @@
             android:id="@+id/profile_image"
             android:layout_width="match_parent"
             android:layout_height="157dp"
-            android:src="@drawable/img"
+            android:src="@drawable/logo_login"
             app:civ_border_color="#FF000000"
             app:civ_border_width="2dp" />
 
@@ -62,6 +62,7 @@
 
 
             <LinearLayout
+
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
@@ -70,30 +71,68 @@
 
 
                 <EditText
+                    android:id="@+id/edt_usuario"
                     android:layout_width="300dp"
                     android:layout_height="50dp"
                     android:layout_gravity="center"
+
+
                     android:layout_margin="20dp"
-
-
                     android:background="@drawable/input_bg"
-                    android:hint="username"
+                    android:hint="usuario"
                     android:textAlignment="center"
                     android:textColor="@color/black" />
 
 
                 <EditText
+                    android:id="@+id/edt_contrasenna"
                     android:layout_width="300dp"
                     android:layout_height="50dp"
                     android:layout_gravity="center"
-                    android:background="@drawable/input_bg"
 
+                    android:background="@drawable/input_bg"
                     android:drawablePadding="10dp"
                     android:drawableTint="#100808"
-                    android:hint="password"
+                    android:hint="contraseña"
                     android:inputType="textPassword"
                     android:textAlignment="center"
                     android:textColor="@color/black" />
+
+
+                <TextView
+                    android:id="@+id/tvLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textAlignment="center" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="¿No tienes una cuenta?"
+                        android:textSize="16sp" />
+
+
+                    <TextView
+                        android:id="@+id/txtCrearCuenta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=".Crear cuenta"
+                        android:textColor="#2196F3"
+                        android:textSize="16sp" />
+
+
+
+
+                </LinearLayout>
 
 
                 <Button
@@ -102,20 +141,23 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
-                    android:backgroundTint="@color/black"
+                    android:backgroundTint="@color/grisOscuro"
                     android:drawableRight="@drawable/login"
                     android:text="Login" />
 
 
                 <Button
+                    android:id="@+id/btnLoginGoogle"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
 
+                    android:layout_gravity="center"
                     android:layout_marginTop="20dp"
-                    android:backgroundTint="@color/black"
+                    android:backgroundTint="@color/grisOscuro"
                     android:drawableLeft="@drawable/google"
                     android:text="Google" />
+
+
 
 
             </LinearLayout>

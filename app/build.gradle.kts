@@ -1,6 +1,7 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -40,7 +41,18 @@ android {
 
 dependencies {
 
+    implementation("com.google.firebase:firebase-auth-ktx:22.3.1")
+    val lottieVersion="6.3.0"
 
+
+
+    implementation ("com.airbnb.android:lottie:$lottieVersion")
+
+    implementation(platform("com.google.firebase:firebase-bom:32.7.2"))
+
+    implementation ("com.itextpdf:itext7-core:7.1.15")
+
+    implementation ("com.google.android.gms:play-services-auth:21.0.0")
 
     implementation ("com.makeramen:roundedimageview:2.3.0")
     implementation("androidx.viewpager2:viewpager2:1.0.0")

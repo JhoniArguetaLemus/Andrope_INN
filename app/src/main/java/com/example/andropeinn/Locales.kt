@@ -4,6 +4,7 @@ import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import com.example.andropeinn.databinding.ActivityLocalesBinding
@@ -16,34 +17,23 @@ class Locales : AppCompatActivity() {
         binding=ActivityLocalesBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.btnJardin.setOnClickListener{
-            cambiarActivity(el_jardin())
-           // startActivity(Intent(this, el_jardin::class.java))
-        }
+
+        //obtener el usuario de la persona que inicio sesion
+
+        val extra=intent.extras
+        val usuario=extra?.getString("usuario", "")
+        val txtUsuario=findViewById<TextView>(R.id.txtUsuario)
+        txtUsuario.setText("Bienvenido: ${usuario}")
 
 
-        binding.btnEspejo.setOnClickListener{
-            cambiarActivity(espejo_encantado())
-           // startActivity(Intent(this, espejo_encantado::class.java))
-        }
+        //botones que llevan a las activies donde se muestran los detalles de cada local
+        binding.btnJardin.setOnClickListener{ cambiarActivity(el_jardin()) }
 
-        binding.btnVerTaberna.setOnClickListener{
+        binding.btnEspejo.setOnClickListener{ cambiarActivity(espejo_encantado()) }
 
-            try {
-                cambiarActivity(la_taberna())
-               // startActivity(Intent(this, la_taberna::class.java))
-            }catch (e:Exception){
-                val alertDialog=AlertDialog.Builder(this)
-                    .setMessage(e.message)
-                    .setPositiveButton("Aceptar"){dialog, it->}
-                    .show()
-            }
+        binding.btnVerTaberna.setOnClickListener{ cambiarActivity(la_taberna()) }
 
-        }
-
-        binding.btnEstrellas.setOnClickListener{
-            cambiarActivity(las_estrellas())
-        }
+        binding.btnEstrellas.setOnClickListener{ cambiarActivity(las_estrellas()) }
 
 
     }

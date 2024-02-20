@@ -8,9 +8,14 @@
     tools:context=".reserva">
 
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -28,12 +33,35 @@
             android:textSize="34sp"
             android:textStyle="bold" />
 
+
+
+
+
+
+
+
+
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="70dp"
             android:background="@drawable/reserva_bg"
             android:orientation="vertical">
+
+
+
+
+
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/reservation"
+
+                />
 
             <TextView
                 android:id="@+id/nombre_local"
@@ -42,6 +70,18 @@
                 android:layout_marginTop="50dp"
                 android:layout_gravity="center"
                 android:text="nombre local"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+
+            <EditText
+                android:id="@+id/edtFecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:hint="Selecciona la fecha"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="25sp" />
@@ -65,23 +105,25 @@
 
                 <ImageButton
                     android:id="@+id/btnMenos"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:backgroundTint="#8dc6ff"
                     android:src="@drawable/minus_box" />
 
                 <EditText
-                    android:id="@+id/editTextNumber"
+                    android:id="@+id/edtCantidad"
                     android:layout_width="30dp"
+                    android:editable="false"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:ems="10"
-                    android:inputType="number" />
+                    android:inputType="number"
+                    android:textAlignment="center" />
 
                 <ImageButton
                     android:id="@+id/btnMas"
-                    android:layout_width="wrap_content"
+                    android:layout_width="10dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:backgroundTint="#8dc6ff"
@@ -101,17 +143,43 @@
                 android:textColor="@color/black"
                 android:textSize="25sp" />
 
-            <RadioButton
-                android:id="@+id/radioButton"
-                android:layout_width="wrap_content"
+            <RadioGroup
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:backgroundTint="#050404"
-                android:text="Efectivo"
-                android:textSize="25sp" />
+                >
+
+                <RadioButton
+                    android:id="@+id/pagoEfectivo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="#050404"
+                    android:theme="@style/RadioButtonStyle"
+                    android:text="Efectivo"
+                    android:textSize="25sp" />
+
+
+
+                <RadioButton
+                    android:id="@+id/pagoTarjeta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="#050404"
+                    android:theme="@style/RadioButtonStyle"
+                    android:text="Tarjeta de credito/debito"
+                    android:textSize="25sp" />
+
+
+
+
+            </RadioGroup>
+
+
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/btnHacerReserva"
                 android:layout_width="205dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -120,7 +188,14 @@
                 android:text="Reservar"
                 android:textColor="#e4f1fe"
                 android:textSize="25sp" />
+
+
         </LinearLayout>
+
+
+
     </LinearLayout>
+
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
